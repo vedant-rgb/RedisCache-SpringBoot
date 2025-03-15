@@ -21,6 +21,7 @@ import java.time.Duration;
 public class CacheConfig {
 
 
+    // This is optional bean as we have mentioned all redis properties in application.properties
     @Bean
     public LettuceConnectionFactory redisConnectionFactory() {
         RedisStandaloneConfiguration redisConfig = new RedisStandaloneConfiguration();
